@@ -1,0 +1,21 @@
+.Contract{
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+    .container{
+        .contract-title{
+            h2{
+                font-size: 40px;
+            }
+        }
+        .contract-table{
+            td{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
