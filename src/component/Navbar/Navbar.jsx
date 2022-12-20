@@ -36,7 +36,7 @@ export default function Navbar() {
         </li>
         <li className="sidebar-list-item">
           <span>
-            <i class="fas fa-sign-out-alt"></i>
+            <i class="fas fa-file-contract"></i>
             <NavLink to="contract">Hợp Đồng </NavLink>
           </span>
         </li>

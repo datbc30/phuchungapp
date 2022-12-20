@@ -61,7 +61,7 @@ export default function TableContractDetail(contractId) {
   
   return (
     <div>
-      <Table columns={columns} dataSource={arrData} />
+      <Table style={{maxWidth: 1200}} scroll={{ x: true}} columns={columns} dataSource={arrData} />
     </div>
   );
 }

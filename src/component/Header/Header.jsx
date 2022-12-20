@@ -9,11 +9,12 @@ export default function Header() {
   );
 
     const handleSidebar = () => {
-      // document.getElementById("sidebar").style.display= "inline"
-      // document.getElementById("sidebar").style.position="absolute"
-      // document.getElementById("sidebar").style.zIndex="1100"
-      // document.getElementById("close").style.display = "flex"
-      // document.getElementById("close").style.flexDirection = "row-reverse"
+      document.getElementById("sidebar").style.display= "inline"
+      document.getElementById("sidebar").style.position="absolute"
+      document.getElementById("sidebar").style.zIndex="1100"
+      document.getElementById("close").style.display = "flex"
+      document.getElementById("close").style.flexDirection = "row-reverse"
+      
     }
  
   return (

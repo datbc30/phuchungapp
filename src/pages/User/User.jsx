@@ -168,6 +168,7 @@ const App = () => {
           //   type: selectionType,
           //   ...rowSelection,
           // }}
+          style={{maxWidth: 1200}} scroll={{ x: true}}
           columns={columns}
           dataSource={data}
         />

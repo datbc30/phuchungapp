@@ -48,10 +48,10 @@ export default function Product() {
                 <button
                   className="btn"
                   value={item._id}
-                  onClick={() => {
-                    console.log({ addToCart: item });
-                    dispatch(addToCart(item));
-                  }}
+                  // onClick={() => {
+                  //   console.log({ addToCart: item });
+                  //   dispatch(addToCart(item));
+                  // }}
                 >
                   <i class="fas fa-cart-plus"></i>
                 </button>
@@ -74,14 +74,7 @@ export default function Product() {
                 </button>
               </div>
             </div>
-            {/* <div className="card-footer">
-              <button className="btn" value={item._id} onClick={() => {
-                console.log({addToCart:item});
-                dispatch(addToCart(item))
-                
-              }}>Thêm Vào</button>
-              <NavLink to={`/detail/${item._id}`} className="btn1">Chi Tiết</NavLink>
-            </div> */}
+            
           </div>
         </div>
       );

@@ -69,12 +69,12 @@ const TableCart = () => {
       render: (_id) => {
         return (
           <div>
-            <button
+            {/* <button
               className="btn action-edit"
               style={{ backgroundColor: "rgb(224 176 109)", marginRight: 10 }}
             >
-              Sửa
-            </button>
+              <i class="fas fa-edit"></i>
+            </button> */}
             <button
               className="btn action-delete"
               style={{ backgroundColor: "rgb(204 204 204)" }}
@@ -82,7 +82,7 @@ const TableCart = () => {
                 dispatch(removeFromCart(_id));
               }}
             >
-              Xoá
+              <i class="fas fa-trash"></i>
             </button>
           </div>
         );
@@ -143,6 +143,7 @@ const TableCart = () => {
       </div> */}
       <Table
         // rowSelection={rowSelection}
+        style={{maxWidth: 1100}} scroll={{ x: true}}
         columns={columns}
         dataSource={dataArr}
       />

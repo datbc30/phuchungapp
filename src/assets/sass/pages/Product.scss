@@ -243,6 +243,14 @@
     }
 
     .main-container {
+        .search-product{
+            display: flex;
+            flex-direction: column;
+            .inputSearch{
+                width: 280px;
+                margin-bottom: 15px;
+            }
+        }
         .main-card {
             .row {
                 .card {
