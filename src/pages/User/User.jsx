@@ -29,10 +29,7 @@ const columns = [
     title: "Cơ quan",
     dataIndex: "organization",
   },
-  // {
-  //   title: "isActive",
-  //   dataIndex: "isActive",
-  // },
+ 
 ];
 
 // rowSelection object indicates the need for row selection
@@ -78,7 +75,6 @@ const App = () => {
   const [valueUser, setValueUser] = useState("");
 
   const handleUser = (e) => {
-    console.log({event : e});
     const submitValue = e;
     const data = { ...submitValue };
     dispatch(addUserApi(data));

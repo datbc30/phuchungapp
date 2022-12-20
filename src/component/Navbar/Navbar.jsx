@@ -15,7 +15,7 @@ export default function Navbar() {
           </span>
           <span className="sidebar-brand-logo">
             <i class="fas fa-user-secret"></i>
-            <p>Phúc Hưng Store</p>
+            <p>Phúc Hưng Shop</p>
           </span>
         </div>
       </div>

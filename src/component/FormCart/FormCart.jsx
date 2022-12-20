@@ -27,10 +27,7 @@ export default function FormCart(arrCart) {
   
 
   const [valueForm, setValueForm] = useState("");
-  console.log({ valueForm });
   const handleFormSubmit = (e) => {
-    // console.log({ event: e });
-    // setValueForm(e);
     const formValue = e;
     const elements = arrCart.arrCart.map((e) => ({
       product: e._id,
@@ -83,9 +80,9 @@ export default function FormCart(arrCart) {
       <Form.Item label="Ghi Chú" name="note">
         <TextArea rows={4} />
       </Form.Item>
-      <Form.Item label="Đặt Hàng">
+      <Form.Item label="Tạo Hợp ĐồNG">
         <Button htmlType="submit" >
-          Đặt Hàng 
+          Hoàn Tất 
         </Button>
       </Form.Item>
     </Form>

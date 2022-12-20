@@ -57,8 +57,6 @@ const productReducer = createSlice({
       let index = state.arrCart.findIndex(
         (pro) => pro._id === action.payload._id
       );
-      console.log({ addCart: action.payload });
-      // console.log({index});
       if (index !== -1) {
         state.arrCart[index].quantityBuy += state.quantityBuy;
       } else {
@@ -68,9 +66,7 @@ const productReducer = createSlice({
     },
     changeQuantityCart: (state, action) => {
       let { type, id } = action.payload;
-      console.log({ payload: action.payload });
       let index = state.arrCart.findIndex((pro) => pro._id === id);
-      console.log({ change: state.arrCart[index] });
       if (type) {
         state.arrCart[index].quantityBuy += 1;
       } else {
@@ -108,7 +104,6 @@ const productReducer = createSlice({
        const product = action.payload;
         // const products = state.arrProduct
         state.editProduct = product
-      console.log({product});
     }
   },
 });

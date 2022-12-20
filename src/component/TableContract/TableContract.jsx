@@ -43,7 +43,6 @@ const columns = [
   ];
   export default function TableContrac(contract) {
       const arrIndex = contract.contract
-      console.log({arrIndex});
       let arrData = []
       for (let i = 0; i < arrIndex.length ; i++){
           arrData.push({

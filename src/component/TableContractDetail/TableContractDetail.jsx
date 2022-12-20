@@ -32,7 +32,6 @@ const columns = [
 ];
 export default function TableContractDetail(contractId) {
   const arrIndex = contractId.contractId;
-  console.log({ arrIndex });
   let arrData = [];
   let sum = 0
   for (let i = 0; i < arrIndex.length; i++) {

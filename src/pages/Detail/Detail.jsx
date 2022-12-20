@@ -14,7 +14,6 @@ import dayjs from "dayjs";
 
 export default function Detail() {
   const { detailProduct } = useSelector((state) => state.productReducer);
-  console.log({ detailProduct });
   const dispatch = useDispatch();
   const params = useParams();
   const { Search } = Input;
@@ -32,9 +31,6 @@ export default function Detail() {
   };
 
   //--antd----------
-  const onChange = (value) => {
-    console.log("changed", value);
-  };
   
   const [quantityBuy, setQuantityBuy] = useState(0);
   const addQuantityBuy = () => {
@@ -46,7 +42,6 @@ export default function Detail() {
 
   const [costOne, setCostOne] = useState(0);
   const changeCostOne = (e) => {
-    console.log({ e: e.target.value });
     setCostOne(e.target.value);
   };
   //===

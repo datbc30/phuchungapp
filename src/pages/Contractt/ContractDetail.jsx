@@ -29,7 +29,7 @@ export default function ContractDetail() {
           <TableContractDetail contractId={contractId} />
         </div>
         <div className="table-customer">
-          <div className="col-8">
+          <div className="table-customer-left">
             <div className="table-left">
               <h2 className="text-center">{name}</h2>
               <p>số điện thoại: {phone}</p>
@@ -37,10 +37,10 @@ export default function ContractDetail() {
               <p>Tổ chức : {organization}</p>
             </div>
           </div>
-          <div className="col-4">
+          <div className="table-customer-right">
             <div className="table-right">
-              <button className="btn btn-danger">Kết thúc hợp đồng</button>
-              <button className="btn btn-primary">In hoá đơn đã tất toán</button>
+              <button className="btn-kt">Kết thúc hợp đồng</button>
+              <button className="btn-in">In hoá đơn tất toán</button>
             </div>
           </div>
         </div>

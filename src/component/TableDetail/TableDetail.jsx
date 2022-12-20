@@ -36,7 +36,6 @@ const columns = [
 
 export default function TableDetail(detailProduct) {
     const history = detailProduct.detailProduct.history
-    console.log({history});
     let arrData = [];
     for ( let i = 0; i < history.length ; i++) {
         arrData.push({
@@ -49,7 +48,6 @@ export default function TableDetail(detailProduct) {
             address:history[i].address
         });
     }
-    console.log({arrData});
   return (
     <div>
         <Table style={{maxWidth: 1200}} scroll={{ x: true}} columns={columns} dataSource={arrData} />;

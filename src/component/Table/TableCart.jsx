@@ -11,7 +11,6 @@ import {
 
 const TableCart = () => {
   const { arrCart } = useSelector((state) => state.productReducer);
-  console.log({ arrCart });
   const dispatch = useDispatch();
   const columns = [
     {
@@ -90,7 +89,6 @@ const TableCart = () => {
     },
   ];
   let dataArr = [];
-  console.log({ arrCart });
   for (let i = 0; i < arrCart.length; i++) {
     dataArr.push({
       key: i,
@@ -103,7 +101,6 @@ const TableCart = () => {
       action: arrCart[i]._id,
     });
   }
-  console.log({ dataArr });
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -128,19 +125,7 @@ const TableCart = () => {
 
   return (
     <div>
-      {/* <div
-        style={{
-          marginBottom: 16,
-        }}
-      >
-        <span
-          style={{
-            marginLeft: 8,
-          }}
-        >
-          {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
-        </span>
-      </div> */}
+      
       <Table
         // rowSelection={rowSelection}
         style={{maxWidth: 1100}} scroll={{ x: true}}
